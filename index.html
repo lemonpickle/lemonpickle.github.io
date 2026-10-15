@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the deployed projects of Yash Aryan, from visualizers and tools to courses and learning resources.">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>Projects by Yash Aryan</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font: 16px/1.5 "Segoe UI", sans-serif;
+      color: #20231f;
+      background: #f6f5f0;
+      font-synthesis: none;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      --ink: #20231f;
+      --muted: #6e726b;
+      --line: #dedfd7;
+      --accent: #d6532c;
+      --surface: #fffefa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      width: min(100% - 48px, 1040px);
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 27px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+    }
+
+    .github-link {
+      color: var(--muted);
+      font-size: 0.875rem;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+
+    .projects-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .project-count {
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 650;
+      letter-spacing: 0.1em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .project-link {
+      display: flex;
+      min-height: 112px;
+      align-items: center;
+      gap: 18px;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .project-link:hover {
+      transform: translateY(-2px);
+      border-color: #bcbeb4;
+      box-shadow: 0 8px 24px rgb(32 35 31 / 6%);
+    }
+
+    .project-link:focus-visible,
+    .github-link:focus-visible,
+    .wordmark:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .project-number {
+      flex: 0 0 32px;
+      color: #a1a49b;
+      font-size: 0.75rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .project-name {
+      flex: 1;
+      font-size: 1.05rem;
+      font-weight: 650;
+      letter-spacing: -0.025em;
+    }
+
+    .project-arrow {
+      color: var(--accent);
+      font-size: 1.1rem;
+      transition: transform 160ms ease;
+    }
+
+    .project-link:hover .project-arrow {
+      transform: translate(2px, -2px);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 72px;
+      padding: 22px 0 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 36px, 480px);
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .project-link {
+        min-height: 88px;
+        padding: 18px;
+      }
+
+      footer {
+        margin-top: 52px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="https://github.com/lemonpickle">Yash Aryan</a>
+      <a class="github-link" href="https://github.com/lemonpickle" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section aria-labelledby="projects-title">
+        <div class="projects-heading">
+          <h2 id="projects-title">Deployed projects</h2>
+          <span class="project-count">9 PROJECTS</span>
+        </div>
+        <ul class="projects">
+          <li><a class="project-link" href="https://lemonpickle.github.io/ContestKit/" target="_blank" rel="noopener noreferrer"><span class="project-number">01</span><span class="project-name">ContestKit</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/cplusplus17-template-library/" target="_blank" rel="noopener noreferrer"><span class="project-number">02</span><span class="project-name">C++17 Template Library</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/JavaScript-Course/" target="_blank" rel="noopener noreferrer"><span class="project-number">03</span><span class="project-name">JavaScript Course</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/Markdown-and-LaTeX-Lessons/" target="_blank" rel="noopener noreferrer"><span class="project-number">04</span><span class="project-name">Markdown &amp; LaTeX Lessons</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/Property-Web-App/" target="_blank" rel="noopener noreferrer"><span class="project-number">05</span><span class="project-name">Property Web App</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/Python-Course/" target="_blank" rel="noopener noreferrer"><span class="project-number">06</span><span class="project-name">Python Course</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/Search-Visualizer/" target="_blank" rel="noopener noreferrer"><span class="project-number">07</span><span class="project-name">Search Visualizer</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/sorting-visualizer/" target="_blank" rel="noopener noreferrer"><span class="project-number">08</span><span class="project-name">Sorting Visualizer</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+          <li><a class="project-link" href="https://lemonpickle.github.io/wordlist/" target="_blank" rel="noopener noreferrer"><span class="project-number">09</span><span class="project-name">Wordlist</span><span class="project-arrow" aria-hidden="true">↗</span></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>Yash Aryan</span>
+    </footer>
+  </div>
+</body>
+</html>
